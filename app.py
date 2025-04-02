@@ -8,6 +8,10 @@ app = Flask(__name__)
 
 # ------------------- STEP 1: Google Sheets Authentication (Load Once) -------------------
 def authenticate_google_sheets():
+
+    credentials_json = os.getenv("GOOGLE_CREDENTIALS")
+    creds_dict = json.loads(credentials_json)
+
     scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
     creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
     client = gspread.authorize(creds)
