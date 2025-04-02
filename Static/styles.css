@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 200px;
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 2px 0px 5px rgba(0,0,0,0.1);
+    height: 100vh;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.buttons {
+    margin: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.checkin {
+    background: green;
+}
+
+.checkout {
+    background: red;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 20px;
+}
+
+.grid-item {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.grid-item i {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background: #2563eb;
+}
+
+.sidebar .active {
+    background: #2563eb;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    width: 100%;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 20px auto;
+}
